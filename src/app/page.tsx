@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Footer } from "@/components/layout/Footer";
@@ -247,7 +247,7 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-700">"Współpraca z BS SC to strzał w dziesiątkę dla mojego startupa. Dzięki ich wsparciu mogę skupić się na rozwoju produktu, a nie na rozliczeniach podatkowych. Profesjonalizm i elastyczność na najwyższym poziomie!"</p>
+                  <p className="text-gray-700">&quot;Współpraca z BS SC to strzał w dziesiątkę dla mojego startupa. Dzięki ich wsparciu mogę skupić się na rozwoju produktu, a nie na rozliczeniach podatkowych. Profesjonalizm i elastyczność na najwyższym poziomie!&quot;</p>
                 </CardContent>
               </Card>
               
@@ -271,7 +271,7 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-700">"Od roku korzystam z usług BS SC i jestem zachwycona poziomem obsługi. Zawsze otrzymuję szybkie odpowiedzi na moje pytania, a księgowość mojego sklepu internetowego jest prowadzona perfekcyjnie. Polecam!"</p>
+                  <p className="text-gray-700">&quot;Od roku korzystam z usług BS SC i jestem zachwycona poziomem obsługi. Zawsze otrzymuję szybkie odpowiedzi na moje pytania, a księgowość mojego sklepu internetowego jest prowadzona perfekcyjnie. Polecam!&quot;</p>
                 </CardContent>
               </Card>
               
@@ -295,7 +295,7 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-700">"BS SC doskonale rozumie specyfikę rozwijających się firm. Cenię ich za elastyczność, terminowość i profesjonalne doradztwo. Dzięki nim mogę spokojnie rozwijać moją agencję bez stresu związanego z rozliczeniami."</p>
+                  <p className="text-gray-700">&quot;BS SC doskonale rozumie specyfikę rozwijających się firm. Cenię ich za elastyczność, terminowość i profesjonalne doradztwo. Dzięki nim mogę spokojnie rozwijać moją agencję bez stresu związanego z rozliczeniami.&quot;</p>
                 </CardContent>
               </Card>
             </div>
