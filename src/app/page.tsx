@@ -2,10 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Footer } from "@/components/layout/Footer";
-import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
   return (
