@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Footer } from "@/components/layout/Footer";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -20,10 +21,10 @@ export default function Home() {
             <Link href="#oferta" className="font-medium hover:text-[#FF6D2C] transition-colors">Oferta</Link>
             <Link href="#o-nas" className="font-medium hover:text-[#FF6D2C] transition-colors">O nas</Link>
             <Link href="#opinie" className="font-medium hover:text-[#FF6D2C] transition-colors">Opinie</Link>
-            <Link href="#kontakt" className="font-medium hover:text-[#FF6D2C] transition-colors">Kontakt</Link>
+            <Link href="/kontakt" className="font-medium hover:text-[#FF6D2C] transition-colors">Kontakt</Link>
           </nav>
-          <Button className="hidden md:flex bg-[#FF6D2C] hover:bg-[#e65a1c] text-white">
-            Darmowa konsultacja
+          <Button className="hidden md:flex bg-[#FF6D2C] hover:bg-[#e65a1c] text-white" asChild>
+            <Link href="/kontakt">Darmowa konsultacja</Link>
           </Button>
           <Button variant="ghost" size="icon" className="md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -46,12 +47,19 @@ export default function Home() {
               <p className="text-lg md:text-xl text-gray-700">
                 Zajmij się rozwojem swojego biznesu, a my zadbamy o Twoją księgowość. Kompleksowa obsługa księgowa dostosowana do potrzeb dynamicznych firm.
               </p>
+              <div className="bg-white p-4 rounded-lg border-2 border-dashed border-[#FF6D2C] relative mt-4 mb-6 overflow-hidden">
+                <div className="absolute top-0 right-0 bg-[#FF6D2C] text-white py-1 px-4 transform rotate-45 translate-x-6 -translate-y-1 font-bold text-sm">
+                  -20%
+                </div>
+                <p className="font-bold text-[#FF6D2C]">Oferta Specjalna dla Nowych Firm!</p>
+                <p className="text-sm text-gray-700">Zniżka 20% na wszystkie usługi księgowe przez pierwsze 3 miesiące od wpisu do CEIDG!</p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-[#1EA39B] hover:bg-[#198f87] text-white">
-                  Poznaj ofertę
+                <Button className="bg-[#1EA39B] hover:bg-[#198f87] text-white" asChild>
+                  <Link href="#oferta">Poznaj ofertę</Link>
                 </Button>
-                <Button variant="outline" className="border-[#1EA39B] text-[#1EA39B] hover:bg-[#1EA39B] hover:text-white">
-                  Skontaktuj się z nami
+                <Button variant="outline" className="border-[#1EA39B] text-[#1EA39B] hover:bg-[#1EA39B] hover:text-white" asChild>
+                  <Link href="/kontakt">Skontaktuj się z nami</Link>
                 </Button>
               </div>
             </div>
@@ -75,7 +83,7 @@ export default function Home() {
               Zajmujemy się wyłącznie uproszczoną księgowością — nie świadczymy usług doradczych. Dzięki temu możesz mieć pewność, że cały nasz wysiłek koncentruje się na sprawnym prowadzeniu Twoich rozliczeń.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-lg border-t-4 border-[#1EA39B] shadow-md flex flex-col">
+              <div className="bg-white p-8 rounded-lg shadow-md flex flex-col">
                 <div className="text-[#FF6D2C] mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect width="18" height="18" x="3" y="3" rx="2" />
@@ -92,7 +100,7 @@ export default function Home() {
                 </button>
               </div>
               
-              <div className="bg-white p-8 rounded-lg border-t-4 border-[#1EA39B] shadow-md flex flex-col">
+              <div className="bg-white p-8 rounded-lg shadow-md flex flex-col">
                 <div className="text-[#FF6D2C] mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
@@ -109,7 +117,7 @@ export default function Home() {
                 </button>
               </div>
               
-              <div className="bg-white p-8 rounded-lg border-t-4 border-[#1EA39B] shadow-md flex flex-col">
+              <div className="bg-white p-8 rounded-lg shadow-md flex flex-col">
                 <div className="text-[#FF6D2C] mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -127,7 +135,7 @@ export default function Home() {
                 </button>
               </div>
               
-              <div className="bg-white p-8 rounded-lg border-t-4 border-[#1EA39B] shadow-md flex flex-col">
+              <div className="bg-white p-8 rounded-lg shadow-md flex flex-col">
                 <div className="text-[#FF6D2C] mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -146,7 +154,7 @@ export default function Home() {
                 </button>
               </div>
               
-              <div className="bg-white p-8 rounded-lg border-t-4 border-[#1EA39B] shadow-md flex flex-col">
+              <div className="bg-white p-8 rounded-lg shadow-md flex flex-col">
                 <div className="text-[#FF6D2C] mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
@@ -162,7 +170,7 @@ export default function Home() {
                 </button>
               </div>
               
-              <div className="bg-white p-8 rounded-lg border-t-4 border-[#1EA39B] shadow-md flex flex-col">
+              <div className="bg-white p-8 rounded-lg shadow-md flex flex-col">
                 <div className="text-[#FF6D2C] mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -175,6 +183,39 @@ export default function Home() {
                 <button className="bg-[#E0F8F2] text-[#1EA39B] py-2 px-4 rounded-md font-medium hover:bg-[#1EA39B] hover:text-white transition-colors self-start">
                   Zobacz więcej
                 </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Oferta specjalna */}
+        <section className="py-12 bg-gradient-to-r from-[#1EA39B]/10 to-[#FF6D2C]/10">
+          <div className="container mx-auto px-4">
+            <div className="bg-white rounded-lg shadow-lg p-8 border-2 border-dashed border-[#FF6D2C] relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-[#FF6D2C] text-white py-2 px-6 transform rotate-45 translate-x-8 -translate-y-2 font-bold">
+                -20%
+              </div>
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="bg-[#E0F8F2] rounded-full p-6 w-24 h-24 flex items-center justify-center shrink-0 mx-auto md:mx-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1EA39B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    <path d="M12 10v4" />
+                    <path d="M10 12h4" />
+                  </svg>
+                </div>
+                <div className="text-center md:text-left">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-2">Oferta Specjalna dla Nowych Firm</h2>
+                  <p className="text-lg text-gray-700 mb-2">
+                    <span className="font-semibold text-[#FF6D2C]">Zniżka 20%</span> na wszystkie usługi księgowe przez pierwsze 3 miesiące od wpisu do CEIDG!
+                  </p>
+                  <p className="text-gray-600 mb-4">
+                    Skorzystaj z profesjonalnego wsparcia księgowego na start swojej działalności w promocyjnej cenie.
+                  </p>
+                  <Button asChild className="bg-[#FF6D2C] hover:bg-[#e65a1c] text-white py-2 px-6 rounded-md font-medium transition-colors">
+                    <Link href="/kontakt">Dowiedz się więcej</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -353,32 +394,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white p-8 rounded-lg">
-                <form className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="name" className="block mb-1 font-medium">Imię i nazwisko</label>
-                      <Input id="name" placeholder="Jan Kowalski" />
-                    </div>
-                    <div>
-                      <label htmlFor="phone" className="block mb-1 font-medium">Telefon</label>
-                      <Input id="phone" placeholder="+48 123 456 789" />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block mb-1 font-medium">Email</label>
-                    <Input id="email" type="email" placeholder="jankowalski@example.com" />
-                  </div>
-                  <div>
-                    <label htmlFor="company" className="block mb-1 font-medium">Nazwa firmy</label>
-                    <Input id="company" placeholder="Startup Tech Sp. z o.o." />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block mb-1 font-medium">Wiadomość</label>
-                    <Textarea id="message" placeholder="Jak możemy Ci pomóc?" rows={4} />
-                  </div>
-                  <Button className="w-full bg-[#FF6D2C] hover:bg-[#e65a1c]">Wyślij wiadomość</Button>
-                </form>
+              <div className="bg-white p-8 rounded-lg text-center">
+                <h3 className="text-xl font-bold mb-6">Potrzebujesz pełnego formularza kontaktowego?</h3>
+                <p className="text-gray-700 mb-6">
+                  Przejdź do naszej strony kontaktowej, gdzie znajdziesz szczegółowy formularz oraz dodatkowe informacje.
+                </p>
+                <Button asChild className="bg-[#FF6D2C] hover:bg-[#e65a1c] text-white px-8 py-3">
+                  <Link href="/kontakt">Przejdź do strony kontaktowej</Link>
+                </Button>
               </div>
             </div>
           </div>
