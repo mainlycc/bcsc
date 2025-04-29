@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -6,7 +7,15 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">BS SC</h3>
+            <div className="mb-4">
+              <Image
+                src="/BC.png"
+                alt="BS SC Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            </div>
             <p className="text-white/80">
               Kompleksowa obsługa księgowa dla startupów i młodych firm. Wspieramy Twój biznes, byś mógł skupić się na tym, co najważniejsze - jego rozwoju.
             </p>
