@@ -13,8 +13,8 @@ export default function KontaktPage() {
             <Image
               src="/BC.png"
               alt="BS SC Logo"
-              width={100}
-              height={100}
+              width={150}
+              height={150}
               className="object-contain"
             />
           </Link>
