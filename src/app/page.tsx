@@ -41,8 +41,8 @@ export default function Home() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink href="#oferta" className="font-medium hover:text-[#FF4800] transition-colors">
-                  Oferta
+                <NavigationMenuLink href="/cennik" className="font-medium hover:text-[#FF4800] transition-colors">
+                  Cennik
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
@@ -97,7 +97,7 @@ export default function Home() {
               </Card>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="bg-[#2209B8] hover:bg-[#1B0792] text-white" asChild>
-                  <Link href="#oferta">Poznaj ofertę</Link>
+                  <Link href="/cennik">Poznaj ofertę</Link>
                 </Button>
                 <Button variant="outline" className="border-[#2209B8] text-[#2209B8] hover:bg-[#2209B8] hover:text-white" asChild>
                   <Link href="/kontakt">Skontaktuj się z nami</Link>
@@ -276,7 +276,7 @@ export default function Home() {
         <section id="o-nas" className="py-16 bg-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              Dlaczego <span className="text-[#FF4800]">BS SC</span> to najlepszy wybór?
+              Dlaczego <span className="text-[#FF4800]">BC SC</span> to najlepszy wybór?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="p-6 bg-[#B9D6F2]">
@@ -343,7 +343,7 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-700">&quot;Współpraca z BS SC to strzał w dziesiątkę dla mojego startupa. Dzięki ich wsparciu mogę skupić się na rozwoju produktu, a nie na rozliczeniach podatkowych. Profesjonalizm i elastyczność na najwyższym poziomie!&quot;</p>
+                  <p className="text-gray-700">&quot;Współpraca z BC SC to strzał w dziesiątkę dla mojego startupa. Dzięki ich wsparciu mogę skupić się na rozwoju produktu, a nie na rozliczeniach podatkowych. Profesjonalizm i elastyczność na najwyższym poziomie!&quot;</p>
                 </CardContent>
               </Card>
               
@@ -367,7 +367,7 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-700">&quot;Od roku korzystam z usług BS SC i jestem zachwycona poziomem obsługi. Zawsze otrzymuję szybkie odpowiedzi na moje pytania, a księgowość mojego sklepu internetowego jest prowadzona perfekcyjnie. Polecam!&quot;</p>
+                  <p className="text-gray-700">&quot;Od roku korzystam z usług BC SC i jestem zachwycona poziomem obsługi. Zawsze otrzymuję szybkie odpowiedzi na moje pytania, a księgowość mojego sklepu internetowego jest prowadzona perfekcyjnie. Polecam!&quot;</p>
                 </CardContent>
               </Card>
               
@@ -391,7 +391,7 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-700">&quot;BS SC doskonale rozumie specyfikę rozwijających się firm. Cenię ich za elastyczność, terminowość i profesjonalne doradztwo. Dzięki nim mogę spokojnie rozwijać moją agencję bez stresu związanego z rozliczeniami.&quot;</p>
+                  <p className="text-gray-700">&quot;BC SC doskonale rozumie specyfikę rozwijających się firm. Cenię ich za elastyczność, terminowość i profesjonalne doradztwo. Dzięki nim mogę spokojnie rozwijać moją agencję bez stresu związanego z rozliczeniami.&quot;</p>
                 </CardContent>
               </Card>
             </div>

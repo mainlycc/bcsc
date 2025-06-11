@@ -56,7 +56,7 @@ export function Footer() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
-                <a href="https://www.facebook.com/people/BC-Księgowość" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">
+                <a href="https://www.facebook.com/people/BC-Księgowość/61571088134057/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">
                   Facebook
                 </a>
               </li>
@@ -74,7 +74,15 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-          <p>© 2023 BS SC. Wszelkie prawa zastrzeżone.</p>
+          <p>© 2023 BC SC. Wszelkie prawa zastrzeżone.</p>
+          <div className="mt-4 space-x-4">
+            <Link href="/regulamin" className="text-white/60 hover:text-white">
+              Regulamin
+            </Link>
+            <Link href="/polityka-prywatnosci" className="text-white/60 hover:text-white">
+              Polityka Prywatności
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

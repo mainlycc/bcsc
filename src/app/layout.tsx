@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BS SC - Księgowość dla startupów",
+  title: "BC SC - Księgowość dla startupów",
   description: "Profesjonalna obsługa księgowa dla startupów i młodych firm",
 };
 
