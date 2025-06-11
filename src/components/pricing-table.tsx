@@ -91,7 +91,7 @@ export default function Component() {
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-2xl font-bold text-gray-900">{pkg.name}</CardTitle>
               <CardDescription className="text-sm text-gray-500 mb-2">
-                Pakiet "{pkg.name}" {pkg.type}
+                Pakiet &quot;{pkg.name}&quot; {pkg.type}
               </CardDescription>
               <div className="flex items-baseline justify-center">
                 <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>

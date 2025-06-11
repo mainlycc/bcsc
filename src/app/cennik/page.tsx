@@ -119,7 +119,7 @@ export default function Oferta() {
                       : "text-indigo-600"
                   }`}>{pkg.name}</CardTitle>
                   <CardDescription className="text-sm text-gray-500 mb-2">
-                    Pakiet "{pkg.name}" {pkg.type}
+                    Pakiet &quot;{pkg.name}&quot; {pkg.type}
                   </CardDescription>
                   <div className="flex items-baseline justify-center">
                     <span className={`text-4xl font-bold ${

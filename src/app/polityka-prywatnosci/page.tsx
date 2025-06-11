@@ -94,7 +94,7 @@ export default function PolitykaPrywatnosci() {
               <ul className="list-disc pl-6 mb-4">
                 <li>dostępu do swoich danych osobowych,</li>
                 <li>ich sprostowania,</li>
-                <li>usunięcia („prawo do bycia zapomnianym"),</li>
+                <li>usunięcia (&quot;prawo do bycia zapomnianym&quot; ),</li>
                 <li>ograniczenia przetwarzania,</li>
                 <li>przeniesienia danych,</li>
                 <li>wniesienia sprzeciwu wobec przetwarzania danych,</li>
