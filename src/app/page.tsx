@@ -220,7 +220,7 @@ export default function Home() {
                   className={`flex flex-col p-6 space-y-4 rounded-lg border-l-4 ${testimonial.color} ${testimonial.accent}`}
                 >
                   <div className="flex-1">
-                    <p className="italic text-gray-600">"{testimonial.quote}"</p>
+                    <p className="italic text-gray-600">&ldquo;{testimonial.quote}&rdquo;</p>
                   </div>
                   <div>
                     <p className="font-bold">{testimonial.author}</p>
