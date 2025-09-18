@@ -31,18 +31,18 @@ export default function Home() {
       </div>
       {/* Nagłówek */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b relative">
-        <div className="container mx-auto px-4 py-2 md:py-3 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-1 md:py-2 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Image
               src="/BC.png"
               alt="BS SC Logo"
-              width={100}
-              height={100}
-              className="object-contain md:w-[130px] md:h-[130px]"
+              width={60}
+              height={60}
+              className="object-contain md:w-[80px] md:h-[80px]"
             />
           </div>
           <NavigationMenu className="hidden md:flex">
-            <NavigationMenuList className="gap-8">
+            <NavigationMenuList className="gap-6">
               <NavigationMenuItem>
                 <NavigationMenuLink href="/" className="font-medium hover:text-[#FF4800] transition-colors">
                   Strona główna
