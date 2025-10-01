@@ -12,9 +12,9 @@ export function Services() {
             <Image
               src="/BC.png"
               alt="Business Care Logo"
-              width={150}
-              height={150}
-              className="w-32 h-32 object-contain"
+              width={180}
+              height={180}
+              className="w-40 h-40 object-contain"
               priority
             />
             <h2 className="text-2xl sm:text-3xl font-bold">Nasze Usługi</h2>

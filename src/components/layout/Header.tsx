@@ -11,20 +11,22 @@ import {
 export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <Link href="/">
+      <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="flex items-center -my-2">
+          <Link href="/" className="flex items-center">
             <Image
               src="/BC.png"
               alt="BC SC Logo"
-              width={150}
-              height={150}
+              width={200}
+              height={110}
               className="object-contain"
+              style={{ height: '110px', width: 'auto' }}
+              priority
             />
           </Link>
         </div>
         <NavigationMenu className="hidden md:flex">
-          <NavigationMenuList className="gap-8">
+          <NavigationMenuList className="gap-4">
             <NavigationMenuItem>
               <NavigationMenuLink href="/" className="font-medium hover:text-[#FF4800] transition-colors">
                 Strona główna

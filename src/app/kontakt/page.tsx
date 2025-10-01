@@ -8,17 +8,18 @@ export default function KontaktPage() {
     <div className="bg-[#B9D6F2] min-h-screen flex flex-col">
       {/* Nagłówek */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <Link href="/" className="flex items-center -my-2">
             <Image
               src="/BC.png"
               alt="BS SC Logo"
-              width={150}
-              height={150}
-              className="object-contain"
+              width={180}
+              height={180}
+              className="object-contain w-[110px] h-[110px]"
+              priority
             />
           </Link>
-          <nav className="hidden md:flex gap-8">
+          <nav className="hidden md:flex gap-4">
             <Link href="/" className="font-medium hover:text-[#FF6D2C] transition-colors">Strona główna</Link>
             <Link href="/#oferta" className="font-medium hover:text-[#FF6D2C] transition-colors">Oferta</Link>
             <Link href="/#o-nas" className="font-medium hover:text-[#FF6D2C] transition-colors">O nas</Link>
