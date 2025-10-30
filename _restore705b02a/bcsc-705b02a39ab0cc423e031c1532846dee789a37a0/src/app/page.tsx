@@ -109,7 +109,7 @@ export default function Home() {
                 src="/hero.png" 
                 alt="Księgowość dla startupów" 
                 fill 
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'contain' }}
                 className="rounded-lg shadow-lg"
               />
             </div>
